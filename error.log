@@ -1,0 +1,452 @@
+========================= [127.0.0.19][GET - /sphinx_search?query=123&index=*] [Dec 13 2010 12:56:54]=========================
+Error: lmbException: Sphinx query error
+Additional attributes: Array
+(
+    [error] => connection to localhost:3312 failed (errno=111, msg=Connection refused)
+)
+
+Back trace:
+* lmbException::__construct(STRING(18) "Sphinx query error", ARRAY(1)) in "/home/xanm/Documents/bitcms/trunk/sphinx_search/src/service/SphinxSearchService.class.php" line 53
+* SphinxSearchService::_searchInIndex(STRING(3) "123", STRING(1) "*") in "/home/xanm/Documents/bitcms/trunk/sphinx_search/src/service/SphinxSearchService.class.php" line 66
+* SphinxSearchService::_search(STRING(3) "123") in "/home/xanm/Documents/bitcms/trunk/sphinx_search/src/service/SphinxSearchService.class.php" line 100
+* SphinxSearchService::makeSearch(STRING(3) "123", STRING(1) "*") in "/home/xanm/Documents/piuv/src/controller/SphinxSearchController.class.php" line 28
+* SphinxSearchController::doDisplay() in "/home/xanm/Documents/Limb2010.1.1/web_app/src/controller/lmbController.class.php" line 188
+========================= [127.0.0.19][GET - /faq] [Dec 13 2010 13:22:24]=========================
+Error: lmbMacroException: MACRO exception: Template source file not found
+Additional attributes: Array
+(
+    [file_name] => faq/include/question_form.phtml
+)
+
+Back trace:
+* lmbException::__construct(STRING(47) "MACRO exception: Template source file not found", ARRAY(1)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/lmbMacroException.class.php" line 20
+* lmbMacroException::__construct(STRING(30) "Template source file not found", ARRAY(1)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroCompiler.class.php" line 74
+* lmbMacroCompiler::parseTemplate(STRING(31) "faq/include/question_form.phtml", OBJECT(lmbMacroInsertTag)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/tags/core/insert.tag.php" line 44
+* lmbMacroInsertTag::preParse(OBJECT(lmbMacroCompiler)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTreeBuilder.class.php" line 66
+* lmbMacroTreeBuilder::pushNode(OBJECT(lmbMacroInsertTag)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTagParsingState.class.php" line 88
+========================= [127.0.0.19][GET - /faq] [Dec 13 2010 13:22:28]=========================
+Error: lmbMacroException: MACRO exception: Template source file not found
+Additional attributes: Array
+(
+    [file_name] => faq/include/question_form.phtml
+)
+
+Back trace:
+* lmbException::__construct(STRING(47) "MACRO exception: Template source file not found", ARRAY(1)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/lmbMacroException.class.php" line 20
+* lmbMacroException::__construct(STRING(30) "Template source file not found", ARRAY(1)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroCompiler.class.php" line 74
+* lmbMacroCompiler::parseTemplate(STRING(31) "faq/include/question_form.phtml", OBJECT(lmbMacroInsertTag)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/tags/core/insert.tag.php" line 44
+* lmbMacroInsertTag::preParse(OBJECT(lmbMacroCompiler)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTreeBuilder.class.php" line 66
+* lmbMacroTreeBuilder::pushNode(OBJECT(lmbMacroInsertTag)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTagParsingState.class.php" line 88
+========================= [127.0.0.19][GET - /sphinx_search?query=%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D1%8C&index=*] [Dec 13 2010 14:40:44]=========================
+Error: lmbMacroException: MACRO exception: Unexpected closing tag
+Additional attributes: Array
+(
+    [file] => /home/xanm/Documents/piuv//template/sphinx_search/display.phtml
+    [tag] => list:item
+    [line] => 40
+    [expected_tag] => into
+    [expected_file] => /home/xanm/Documents/piuv//template/sphinx_search/display.phtml
+    [expected_line] => 5
+)
+
+Back trace:
+* lmbException::__construct(STRING(39) "MACRO exception: Unexpected closing tag", ARRAY(6)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/lmbMacroException.class.php" line 20
+* lmbMacroException::__construct(STRING(22) "Unexpected closing tag", ARRAY(6)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTreeBuilder.class.php" line 154
+* lmbMacroTreeBuilder::popExpectedTag(STRING(9) "list:item", OBJECT(lmbMacroSourceLocation)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTreeBuilder.class.php" line 139
+* lmbMacroTreeBuilder::popExpectedTag(STRING(9) "list:item", OBJECT(lmbMacroSourceLocation)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroTagParsingState.class.php" line 73
+* lmbMacroTagParsingState::endElement(STRING(9) "list:item") in "/home/xanm/Documents/Limb2010.1.1/macro/src/compiler/lmbMacroParser.class.php" line 114
+========================= [127.0.0.19][GET - /photogallery] [Dec 13 2010 14:54:21]=========================
+Error: lmbDbException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,9' at line 1 SQL: SELECT * FROM `photogallery_folder` WHERE `parent_id` = 1 AND `is_published` = 1; LIMIT 0,9
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1064
+    [error] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,9' at line 1
+    [sql] => SELECT * FROM `photogallery_folder` WHERE `parent_id` = 1 AND `is_published` = 1; LIMIT 0,9
+)
+
+Back trace:
+* lmbException::__construct(STRING(252) "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(91) "SELECT * FROM `photogallery_folder` WHERE `parent_id` = 1 AND `is_published` = 1; LIMIT 0,9") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(91) "SELECT * FROM `photogallery_folder` WHERE `parent_id` = 1 AND `is_published` = 1; LIMIT 0,9") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 80
+* lmbMysqliRecordSet::rewind() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 43
+* lmbCollectionDecorator::rewind() in "/home/xanm/Documents/piuv/var/compiled/photogallery-folder.phtml.1168611168.php" line 405
+========================= [127.0.0.4][POST - /feedback/item/request_for_educate] [Jan 21 2011 16:14:41]=========================
+Error: lmbException: The following From address failed: xanm@mail.ru
+Back trace:
+* lmbException::__construct(STRING(47) "The following From address failed: xanm@mail.ru") in "/home/xanm/Documents/Limb2010.1.1/mail/src/lmbMailer.class.php" line 178
+* lmbMailer::sendHtmlMail(STRING(20) "testing.2010@mail.ru", STRING(12) "xanm@mail.ru", STRING(21) "Тема письма", STRING(878) "  &lt;dl&gt;
+      &lt;dt&gt;&lt;h3&gt;Электронная почта&lt;/h3&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;/dd&gt;
+      &lt;dt&gt;&lt;h3&gt;Ви...") in "/home/xanm/Documents/bitcms/trunk/feedback/src/model/FeedbackMessageModule.class.php" line 58
+* FeedbackMessageModule::sendMail(STRING(20) "testing.2010@mail.ru", STRING(12) "xanm@mail.ru", STRING(21) "Тема письма", STRING(878) "  &lt;dl&gt;
+      &lt;dt&gt;&lt;h3&gt;Электронная почта&lt;/h3&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;/dd&gt;
+      &lt;dt&gt;&lt;h3&gt;Ви...", NULL) in "/home/xanm/Documents/piuv/src/model/FeedbackMessage.class.php" line 23
+* FeedbackMessage::sendNotify() in "/home/xanm/Documents/bitcms/trunk/feedback/src/controller/FeedbackModuleController.class.php" line 34
+* FeedbackModuleController::doItem() in "/home/xanm/Documents/Limb2010.1.1/web_app/src/controller/lmbController.class.php" line 188
+========================= [127.0.0.4][POST - /feedback/item/request_for_educate] [Jan 21 2011 17:11:39]=========================
+Error: lmbException: The following From address failed: xanm@mail.ru
+Back trace:
+* lmbException::__construct(STRING(47) "The following From address failed: xanm@mail.ru") in "/home/xanm/Documents/Limb2010.1.1/mail/src/lmbMailer.class.php" line 178
+* lmbMailer::sendHtmlMail(STRING(20) "testing.2010@mail.ru", STRING(12) "xanm@mail.ru", STRING(21) "Тема письма", STRING(897) "  &lt;dl&gt;
+      &lt;dt&gt;&lt;h3&gt;Электронная почта&lt;/h3&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;/dd&gt;
+      &lt;dt&gt;&lt;h3&gt;Ви...") in "/home/xanm/Documents/bitcms/trunk/feedback/src/model/FeedbackMessageModule.class.php" line 58
+* FeedbackMessageModule::sendMail(STRING(20) "testing.2010@mail.ru", STRING(12) "xanm@mail.ru", STRING(21) "Тема письма", STRING(897) "  &lt;dl&gt;
+      &lt;dt&gt;&lt;h3&gt;Электронная почта&lt;/h3&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;/dd&gt;
+      &lt;dt&gt;&lt;h3&gt;Ви...", NULL) in "/home/xanm/Documents/piuv/src/model/FeedbackMessage.class.php" line 26
+* FeedbackMessage::sendNotify() in "/home/xanm/Documents/bitcms/trunk/feedback/src/controller/FeedbackModuleController.class.php" line 34
+* FeedbackModuleController::doItem() in "/home/xanm/Documents/Limb2010.1.1/web_app/src/controller/lmbController.class.php" line 188
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 13:07:15]=========================
+Error: Call to a member function count() on a non-object
+Back trace:
+* lmbLog::log(STRING(49) "Call to a member function count() on a non-object", INT(3), ARRAY(0), NULL, STRING(36) "[127.0.0.4][GET - /faq/section?id=1]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(49) "Call to a member function count() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(49) "Call to a member function count() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 13:07:54]=========================
+Error: Call to a member function count() on a non-object
+Back trace:
+* lmbLog::log(STRING(49) "Call to a member function count() on a non-object", INT(3), ARRAY(0), NULL, STRING(36) "[127.0.0.4][GET - /faq/section?id=1]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(49) "Call to a member function count() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(49) "Call to a member function count() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 13:28:58]=========================
+Error: lmbDbException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1 SQL: SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1064
+    [error] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1
+    [sql] => SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+)
+
+Back trace:
+* lmbException::__construct(STRING(247) "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 153
+* lmbMysqliRecordSet::count() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 94
+* lmbCollectionDecorator::count() in "/home/xanm/Documents/piuv/var/compiled/faq-section.phtml.1301752291.php" line 581
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 13:29:19]=========================
+Error: lmbDbException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1 SQL: SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1064
+    [error] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1
+    [sql] => SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+)
+
+Back trace:
+* lmbException::__construct(STRING(247) "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 153
+* lmbMysqliRecordSet::count() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 94
+* lmbCollectionDecorator::count() in "/home/xanm/Documents/piuv/var/compiled/faq-section.phtml.1301752291.php" line 581
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 14:25:13]=========================
+Error: lmbDbException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1 SQL: SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1064
+    [error] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND is_published = 1' at line 1
+    [sql] => SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1
+)
+
+Back trace:
+* lmbException::__construct(STRING(247) "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(75) "SELECT COUNT(*) FROM `faq_object`  WHERE section_id =  AND is_published = 1") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 153
+* lmbMysqliRecordSet::count() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 94
+* lmbCollectionDecorator::count() in "/home/xanm/Documents/piuv/var/compiled/faq-section.phtml.1301752291.php" line 581
+========================= [127.0.0.4][GET - /faq/section?id=1] [Jan 24 2011 14:26:00]=========================
+Error: lmbDbException: Unknown column 'is_published' in 'where clause' SQL: SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,`faq_section`.`utime` as `utime`,`faq_section`.`priority` as `priority` FROM `faq_section`  WHERE is_published = 1 ORDER BY `priority` ASC
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1054
+    [error] => Unknown column 'is_published' in 'where clause'
+    [sql] => SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,`faq_section`.`utime` as `utime`,`faq_section`.`priority` as `priority` FROM `faq_section`  WHERE is_published = 1 ORDER BY `priority` ASC
+)
+
+Back trace:
+* lmbException::__construct(STRING(291) "Unknown column 'is_published' in 'where clause' SQL: SELECT `faq_section`.`id` as `id`,`faq_section`...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(238) "SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(238) "SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 80
+* lmbMysqliRecordSet::rewind() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 43
+* lmbCollectionDecorator::rewind() in "/home/xanm/Documents/piuv/var/compiled/faq-section.phtml.1301752291.php" line 930
+========================= [127.0.0.4][GET - /faq] [Jan 24 2011 14:28:25]=========================
+Error: lmbDbException: Unknown column 'is_published' in 'where clause' SQL: SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,`faq_section`.`utime` as `utime`,`faq_section`.`priority` as `priority` FROM `faq_section`  WHERE is_published = 1 ORDER BY `priority` ASC
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1054
+    [error] => Unknown column 'is_published' in 'where clause'
+    [sql] => SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,`faq_section`.`utime` as `utime`,`faq_section`.`priority` as `priority` FROM `faq_section`  WHERE is_published = 1 ORDER BY `priority` ASC
+)
+
+Back trace:
+* lmbException::__construct(STRING(291) "Unknown column 'is_published' in 'where clause' SQL: SELECT `faq_section`.`id` as `id`,`faq_section`...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(238) "SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(238) "SELECT `faq_section`.`id` as `id`,`faq_section`.`title` as `title`,`faq_section`.`ctime` as `ctime`,...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliRecordSet.class.php" line 80
+* lmbMysqliRecordSet::rewind() in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbCollectionDecorator.class.php" line 43
+* lmbCollectionDecorator::rewind() in "/home/xanm/Documents/piuv/var/compiled/faq-display.phtml.-611297940.php" line 495
+========================= [127.0.0.4][GET - /admin_request_for_educate] [Jan 24 2011 17:13:40]=========================
+Error: lmbNoSuchPropertyException: No such property 'is_published' in RequestForEducate
+Back trace:
+* lmbException::__construct(STRING(52) "No such property 'is_published' in RequestForEducate") in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbObject.class.php" line 215
+* lmbObject::get(STRING(12) "is_published") in "/home/xanm/Documents/Limb2010.1.1/active_record/src/lmbActiveRecord.class.php" line 664
+* lmbActiveRecord::get(STRING(12) "is_published") in "/home/xanm/Documents/Limb2010.1.1/core/src/lmbObject.class.php" line 357
+* lmbObject::__get(STRING(12) "is_published") in "/home/xanm/Documents/piuv/var/compiled/admin_request_for_educate-display.phtml.1863835932.php" line 733
+* MacroTemplateExecutor87d066cd1ad289173246d0fe1ff7f80e::_template8cc63f3bb7473815b073e0bec8ce3d91(ARRAY(2)) in "/home/xanm/Documents/piuv/var/compiled/admin_request_for_educate-display.phtml.1863835932.php" line 273
+========================= [127.0.0.4][GET - /feedback/item/request_for_educate] [Jan 24 2011 17:59:11]=========================
+Error: lmbException: Invalid argument supplied for foreach()
+Additional attributes: Array
+(
+    [file] => /home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php
+    [line] => 943
+)
+
+Back trace:
+* lmbDelegate::invoke(INT(2), STRING(39) "Invalid argument supplied for foreach()", STRING(72) "/home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php", INT(943), ARRAY(39)) in "/home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php" line 943
+* MacroTemplateExecutordc38e6fe598406bf5ed46f66777ba2cf::__staticInclude9(STRING(27) "feedback/include/form.phtml", OBJECT(FeedbackForm)) in "/home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php" line 623
+* MacroTemplateExecutordc38e6fe598406bf5ed46f66777ba2cf::__slotHandler9ca067a83c8bfc5e2f76be82ce12f0ca(ARRAY(0)) in "/home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php" line 250
+* MacroTemplateExecutordc38e6fe598406bf5ed46f66777ba2cf::__staticInclude1(STRING(18) "front_layout.phtml", STRING(18) "front_layout.phtml") in "/home/xanm/Documents/piuv/var/compiled/feedback-item.phtml.303781770.php" line 214
+* MacroTemplateExecutordc38e6fe598406bf5ed46f66777ba2cf::render(ARRAY(0)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/lmbMacroTemplate.class.php" line 73
+========================= [127.0.0.4][GET - /feedback/item/request_for_educate] [Jan 24 2011 18:00:34]=========================
+Error: Call to a member function getCycleArray() on a non-object
+Back trace:
+* lmbLog::log(STRING(57) "Call to a member function getCycleArray() on a non-object", INT(3), ARRAY(0), NULL, STRING(53) "[127.0.0.4][GET - /feedback/item/request_for_educate]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(57) "Call to a member function getCycleArray() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(57) "Call to a member function getCycleArray() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][POST - /feedback/item/request_for_educate] [Jan 25 2011 11:21:58]=========================
+Error: lmbException: htmlspecialchars() expects parameter 1 to be string, object given
+Additional attributes: Array
+(
+    [file] => /home/xanm/Documents/piuv/var/compiled/common-message_content.phtml.-789662705.php
+    [line] => 25
+)
+
+Back trace:
+* lmbDelegate::invoke(INT(2), STRING(65) "htmlspecialchars() expects parameter 1 to be string, object given", STRING(82) "/home/xanm/Documents/piuv/var/compiled/common-message_content.phtml.-789662705.php", INT(25), ARRAY(9))
+* htmlspecialchars(OBJECT(RequestForEducate), INT(3)) in "/home/xanm/Documents/piuv/var/compiled/common-message_content.phtml.-789662705.php" line 25
+* MacroTemplateExecutora44d898ca76e46d20bf1ed85d463fe10::render(ARRAY(0)) in "/home/xanm/Documents/Limb2010.1.1/macro/src/lmbMacroTemplate.class.php" line 73
+* lmbMacroTemplate::render() in "/home/xanm/Documents/Limb2010.1.1/view/src/lmbMacroView.class.php" line 35
+* lmbMacroView::render() in "/home/xanm/Documents/bitcms/trunk/feedback/src/model/FeedbackFormModule.class.php" line 86
+========================= [127.0.0.4][GET - /media/photogallery_storage/21_for_front.jpg] [Jan 27 2011 13:42:50]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(63) "[127.0.0.4][GET - /media/photogallery_storage/21_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /scientific_activities/general_info] [Jan 27 2011 13:42:54]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(54) "[127.0.0.4][GET - /scientific_activities/general_info]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /media/photogallery_storage/24_for_front.jpg] [Jan 27 2011 13:43:01]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(63) "[127.0.0.4][GET - /media/photogallery_storage/24_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /media/photogallery_storage/8_for_front.jpg] [Jan 27 2011 13:43:04]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(62) "[127.0.0.4][GET - /media/photogallery_storage/8_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /media/photogallery_storage/15_for_front.jpg] [Jan 27 2011 13:44:37]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(63) "[127.0.0.4][GET - /media/photogallery_storage/15_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /media/photogallery_storage/12_for_front.jpg] [Jan 27 2011 13:44:43]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(63) "[127.0.0.4][GET - /media/photogallery_storage/12_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/official_documents/schedule] [Jan 27 2011 13:44:45]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(70) "[127.0.0.4][GET - /educational_activities/official_documents/schedule]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /media/photogallery_storage/13_for_front.jpg] [Jan 27 2011 13:49:06]=========================
+Error: Call to a member function getParent() on a non-object
+Back trace:
+* lmbLog::log(STRING(53) "Call to a member function getParent() on a non-object", INT(3), ARRAY(0), NULL, STRING(63) "[127.0.0.4][GET - /media/photogallery_storage/13_for_front.jpg]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(53) "Call to a member function getParent() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(53) "Call to a member function getParent() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:33:42]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:34:36]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:34:38]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:34:43]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:35:34]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/faculties] [Jan 27 2011 14:36:27]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(52) "[127.0.0.4][GET - /educational_activities/faculties]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /educational_activities/official_documents/schedule] [Jan 27 2011 15:40:03]=========================
+Error: lmbException: array_shift() expects parameter 1 to be array, boolean given
+Additional attributes: Array
+(
+    [file] => /home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php
+    [line] => 771
+)
+
+Back trace:
+* lmbDelegate::invoke(INT(2), STRING(60) "array_shift() expects parameter 1 to be array, boolean given", STRING(73) "/home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php", INT(771), ARRAY(11))
+* array_shift(TRUE) in "/home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php" line 771
+* MacroTemplateExecutor3b24f57bebe5472e162922d970f50f0a::__staticInclude11(STRING(31) "_include/navigation_local.phtml") in "/home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php" line 694
+* MacroTemplateExecutor3b24f57bebe5472e162922d970f50f0a::__staticInclude10(STRING(27) "_include/page_sidebar.phtml") in "/home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php" line 125
+* MacroTemplateExecutor3b24f57bebe5472e162922d970f50f0a::__staticInclude1(STRING(18) "front_layout.phtml", STRING(18) "front_layout.phtml") in "/home/xanm/Documents/piuv/var/compiled/document-item.phtml.-271199610.php" line 83
+========================= [127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test] [Jan 27 2011 15:55:26]=========================
+Error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)
+Back trace:
+* lmbLog::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3), ARRAY(0), NULL, STRING(84) "[127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test] [Jan 27 2011 15:56:49]=========================
+Error: Call to a member function getPath() on a non-object
+Back trace:
+* lmbLog::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3), ARRAY(0), NULL, STRING(84) "[127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(51) "Call to a member function getPath() on a non-object", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test] [Jan 27 2011 15:57:23]=========================
+Error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)
+Back trace:
+* lmbLog::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3), ARRAY(0), NULL, STRING(84) "[127.0.0.4][GET - /user_auth/login?redirect=/educational_activities/internship/test]") in "/home/xanm/Documents/Limb2010.1.1/log/src/toolkit/lmbLogTools.class.php" line 36
+* lmbLogTools::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3))
+* call_user_func_array(ARRAY(2), ARRAY(2)) in "/home/xanm/Documents/Limb2010.1.1/toolkit/src/lmbToolkit.class.php" line 243
+* lmbToolkit::__call(STRING(3) "log", ARRAY(2))
+* lmbToolkit::log(STRING(84) "Allowed memory size of 134217728 bytes exhausted (tried to allocate 124784641 bytes)", INT(3)) in "/home/xanm/Documents/Limb2010.1.1/web_app/src/filter/lmbErrorHandlingFilter.class.php" line 47
+========================= [127.0.0.4][POST - /admin_news_object/copy?category_id=1&is_popup=true&ids[]=1&ids[]=2&ids[]=3&TB_iframe=true&width=800&height=600&not_esc=true] [Jan 27 2011 17:06:07]=========================
+Error: lmbDbException: Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137167,1296137167,2130706436,'<p>Содержимое новости <b>1</b></p>')
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1062
+    [error] => Duplicate entry '2147483647' for key 'reverse_id'
+    [sql] => INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137167,1296137167,2130706436,'<p>Содержимое новости <b>1</b></p>')
+)
+
+Back trace:
+* lmbException::__construct(STRING(394) "Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 118
+* lmbMysqliConnection::executeStatement(OBJECT(lmbMysqliInsertStatement)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysql/lmbMysqlStatement.class.php" line 172
+* lmbMysqlStatement::execute() in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliInsertStatement.class.php" line 22
+========================= [127.0.0.4][POST - /admin_news_object/copy?category_id=1&is_popup=true&ids[]=1&ids[]=2&ids[]=3&TB_iframe=true&width=800&height=600&not_esc=true] [Jan 27 2011 17:06:19]=========================
+Error: lmbDbException: Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137179,1296137179,2130706436,'<p>Содержимое новости <b>1</b></p>')
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1062
+    [error] => Duplicate entry '2147483647' for key 'reverse_id'
+    [sql] => INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137179,1296137179,2130706436,'<p>Содержимое новости <b>1</b></p>')
+)
+
+Back trace:
+* lmbException::__construct(STRING(394) "Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 118
+* lmbMysqliConnection::executeStatement(OBJECT(lmbMysqliInsertStatement)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysql/lmbMysqlStatement.class.php" line 172
+* lmbMysqlStatement::execute() in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliInsertStatement.class.php" line 22
+========================= [127.0.0.4][POST - /admin_news_object/copy?category_id=1&is_popup=true&ids[]=1&ids[]=2&ids[]=3&TB_iframe=true&width=800&height=600&not_esc=true] [Jan 27 2011 17:06:34]=========================
+Error: lmbDbException: Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137194,1296137194,2130706436,'<p>Содержимое новости <b>1</b></p>')
+Additional attributes: Array
+(
+    [driver] => lmbMysql
+    [errorno] => 1062
+    [error] => Duplicate entry '2147483647' for key 'reverse_id'
+    [sql] => INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext`,`priority`,`ctime`,`utime`,`create_ip`,`content`) VALUES (2147483647,2,'Новость 1','Аннотация новости 1',1291150800,0,'jpg',10,1296137194,1296137194,2130706436,'<p>Содержимое новости <b>1</b></p>')
+)
+
+Back trace:
+* lmbException::__construct(STRING(394) "Duplicate entry '2147483647' for key 'reverse_id' SQL: INSERT INTO `news` (`reverse_id`,`category_id...", ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 103
+* lmbMysqliConnection::_raiseError(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 111
+* lmbMysqliConnection::execute(STRING(339) "INSERT INTO `news` (`reverse_id`,`category_id`,`title`,`annotation`,`date`,`is_published`,`image_ext...") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliConnection.class.php" line 118
+* lmbMysqliConnection::executeStatement(OBJECT(lmbMysqliInsertStatement)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysql/lmbMysqlStatement.class.php" line 172
+* lmbMysqlStatement::execute() in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysqli/lmbMysqliInsertStatement.class.php" line 22
+========================= [127.0.0.4][POST - /admin_feedback_field/edit/19?TB_iframe=true&width=800&height=600&not_esc=true&is_popup=1] [Feb 02 2011 12:41:49]=========================
+Error: lmbDbException: Can't convert given value to the integer
+Additional attributes: Array
+(
+    [value] => NaN
+)
+
+Back trace:
+* lmbException::__construct(STRING(40) "Can't convert given value to the integer", ARRAY(1)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/drivers/mysql/lmbMysqlStatement.class.php" line 57
+* lmbMysqlStatement::setInteger(STRING(11) "is_required", STRING(3) "NaN") in "/home/xanm/Documents/Limb2010.1.1/dbal/src/lmbTableGateway.class.php" line 241
+* lmbTableGateway::_bindValuesToStatement(OBJECT(lmbMysqliManipulationStatement), ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/lmbTableGateway.class.php" line 222
+* lmbTableGateway::update(ARRAY(4), OBJECT(lmbSQLFieldCriteria)) in "/home/xanm/Documents/Limb2010.1.1/dbal/src/lmbTableGateway.class.php" line 247
+* lmbTableGateway::updateById(INT(19), ARRAY(4)) in "/home/xanm/Documents/Limb2010.1.1/active_record/src/lmbActiveRecord.class.php" line 1083
